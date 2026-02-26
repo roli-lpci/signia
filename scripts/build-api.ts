@@ -1,7 +1,7 @@
 import { execSync } from 'child_process'
 import { readFileSync, writeFileSync } from 'fs'
 import glob from 'glob'
-import isCI from 'is-ci'
+const isCI = !!process.env.CI
 import path from 'path'
 import { rimraf } from 'rimraf'
 
